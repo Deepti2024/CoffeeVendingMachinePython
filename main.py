@@ -1,35 +1,8 @@
-MENU = {
-    "espresso": {
-        "ingredients": {
-            "water": 50,
-            "coffee": 18,
-        },
-        "cost": 1.5,
-    },
-    "latte": {
-        "ingredients": {
-            "water": 200,
-            "milk": 150,
-            "coffee": 24,
-        },
-        "cost": 2.5,
-    },
-    "cappuccino": {
-        "ingredients": {
-            "water": 250,
-            "milk": 100,
-            "coffee": 24,
-        },
-        "cost": 3.0,
-    }
-}
+#user_input=input("What would you like? (espresso/latte/cappuccino):")
 
-resources = {
-    "water": 300,
-    "milk": 200,
-    "coffee": 100,
-}
+from prettytable import PrettyTable
+table=PrettyTable()
 
-money = {
-    "value": 0,
-}
+table.add_column("Pokemon Name",["Pikachu","Squirtle","Charmander"],"l")
+table.add_column("Type",["Electric","Water","Fire"],"l")
+print(table)
